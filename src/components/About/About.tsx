@@ -32,7 +32,6 @@ const About = () => {
 
     // Paragraph appearing stuff
     useEffect(() => {
-        console.log(paragraphDivsRef)
         for (let i = 0; i < paragraphDivsRef.current.length; i++) {
             paragraphObserver.observe(paragraphDivsRef.current[i]);
         }

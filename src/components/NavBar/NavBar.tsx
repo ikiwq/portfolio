@@ -143,16 +143,16 @@ const NavBar = ({ prefersDarkTheme, setPrefersDarkTheme }: { prefersDarkTheme: b
       {menuOpen &&
         <div className={`dark:bg-black bg-white h-screen w-screen absolute z-50`}>
           <div className='text-red-600 gap-4 justify-center items-center flex flex-col h-full text-6xl'>
-            {sections.map((section) => {
+            {sections.map((section, index) => {
               return (
-                <Link to={section.to} smooth duration={500} onClick={() => toggleMenu()}>
+                <Link key={`section-${index}`} to={section.to} smooth duration={500} onClick={() => toggleMenu()}>
                   <p className='navbar-link-menu'>{section.name}</p>
                 </Link>
               )
             })}
             <ul className='flex gap-4 pt-6'>
-              {socials.map((social) =>
-                <li className={`navbar-link-menu text-secondary`} onClick={() => toggleMenu()}>
+              {socials.map((social, index) =>
+                <li key={`social-${index}`} className={`navbar-link-menu text-secondary`} onClick={() => toggleMenu()}>
                   <a href={social.link} target="_blank" rel='noreferr'>
                     {social.component}
                   </a>
@@ -170,8 +170,8 @@ const NavBar = ({ prefersDarkTheme, setPrefersDarkTheme }: { prefersDarkTheme: b
         </div>
         <ul className='hidden text-red-600 gap-4 justify-center items-center md:flex navbar-links-top'>
           {sections.map((section, index) =>
-            <li>
-              <Link key={'section-top' + index.toString()} to={section.to} smooth duration={500}>
+            <li key={'section-top' + index.toString()}>
+              <Link to={section.to} smooth duration={500}>
                 <p id='navbar-link-top' className='cursor-pointer duration-200 top-navbar-element-hidden'>
                   {section.name}
                 </p>
