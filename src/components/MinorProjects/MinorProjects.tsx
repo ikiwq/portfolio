@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { ProjectModel } from '../../models/project.model'
-import Miniloader from '../MiniLoader/Miniloader'
 import MinorProject from './MinorProject'
 import projects from '../../static/projects/projects.content'
 
