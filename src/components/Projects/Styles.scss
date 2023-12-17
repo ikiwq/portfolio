@@ -1,0 +1,75 @@
+.start-left{
+    transform: translateX(-60%);
+    opacity: 0;
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.start-left-mobile{
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.end-left{
+    transform: translateX(0%);
+    opacity: 100%;
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.start-right{
+    opacity: 0;
+    transform: translateX(60%);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.start-right-mobile{
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.end-right{
+    opacity: 100%;
+    transform: translateX(0%);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+.over-class{
+    --tw-bg-opacity: 0.5;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+@keyframes img-animation {
+    0%{
+        filter: saturate(0%)
+    }
+    40%{
+        filter: saturate(0%)
+    }
+    50%{
+        filter: saturate(90%)
+    }
+    60%{
+        filter: saturate(40%)
+    }
+    100%{
+        filter: saturate(100%)
+    }
+}
+
+.img-effect .img-class{
+    background-color: red;
+    opacity: 70%;
+}
+
+.img-effect:hover .img-class{
+    animation-name: img-animation;
+    animation-duration: 700ms;
+    opacity: 100%;
+}

@@ -1,0 +1,53 @@
+.loading-page {
+    animation: disappear 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.loading-container {
+    animation: disappear 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#logo {
+    animation: fill 0.5s ease forwards 3s;
+    color: white;
+}
+
+#logo path:nth-child(2) {
+    stroke: white;
+    stroke-dasharray: 471;
+    stroke-dashoffset: 471px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(3) {
+    stroke: white;
+    stroke-dasharray: 582;
+    stroke-dashoffset: 582px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(4) {
+    stroke: white;
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+  }

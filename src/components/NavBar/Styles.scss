@@ -1,0 +1,75 @@
+@keyframes moonAnim {
+    0%{
+       transform: rotate(0); 
+    }
+    50%{
+        transform: rotate(25deg); 
+    }
+    100%{
+        transform: rotate(0); 
+    }
+}
+
+@keyframes sunAnim {
+    0%{
+        transform: scale(100%); 
+     }
+     50%{
+         transform: scale(120%); 
+     }
+     100%{
+         transform: scale(100%); 
+     }
+}
+
+@keyframes mobile-menuAnim {
+    from{
+        opacity: 0%;
+    }to{
+        opacity: 100%;
+    }
+}
+
+.moon-icon{
+    animation-name: moonAnim;
+    animation-duration: 500ms;
+    &:hover{
+        animation: moonAnim 1s infinite;
+    }
+}
+
+.sun-icon{
+    animation: sunAnim;
+    animation-duration: 500ms;
+    &:hover{
+        animation: sunAnim 1s infinite;
+    }
+}
+
+.top-navbar-element-hidden{
+    transform: translateY(-175%);
+}
+
+@media(hover: hover){
+    .top-navbar-element-shown:hover{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.navbar-link-menu{
+    transform: scale(100%) translateX(-700%);
+    color: red;
+    transition: all;
+    transition-duration: 350ms;
+}
+
+.navbar-link-menu-active{
+    transform: scale(100%) translateX(0%);
+    color: red;
+    transition: all;
+    transition-duration: 350ms;
+}

@@ -1,0 +1,32 @@
+.start{
+    opacity: 0;
+}
+
+.end{
+    opacity: 1;
+}
+
+.over-class{
+    --tw-bg-opacity: 0.5;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+@keyframes img-animation {
+    0%{
+        filter: saturate(0%)
+    }
+    100%{
+        filter: saturate(100%)
+    }
+}
+
+.img-effect .img-class{
+    background-color: red;
+    opacity: 80%;
+}
+
+.img-effect:hover .img-class{
+    animation-name: img-animation;
+    animation-duration: 300ms;
+    opacity: 100%;
+}
