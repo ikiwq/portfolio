@@ -66,7 +66,7 @@ const Home = () => {
               </div>
             </div>
             <div className='w-full md:w-auto flex items-center justify-center  md:relative bottom-15% md:bottom-auto z-20'>
-              <div className='absolute md:relative bottom-10 md:bottom-0'>
+              <div className='absolute md:relative bottom-16 md:bottom-0'>
                 <Link to="contact" smooth duration={500}>
                   <button className='contact-button my-2 md:my-0 px-8 md:px-6 py-4 bg-red-600 rounded-md flex items-center justify-center gap-2 md:mx-0 text-white z-20'>Contact me! <IoMdPaperPlane className='paper-plane text-xl' /></button>
                 </Link>
@@ -75,7 +75,7 @@ const Home = () => {
             <Link to="about" smooth duration={500}><button className={`absolute hidden bottom-20 items-center text-xl animate-bounce lg:flex`}><BsMouse2 />Scroll Down!</button></Link>
           </div>
         </div>
-        <div className='flex items-center justify-center absolute bottom-12 w-full'>
+        <div className='flex items-center justify-center absolute bottom-20 w-full'>
           <span className={`flex items-center justify-center text-center text-xl gap-2 move-div lg:hidden absolute mr-auto ml-auto`}><BsHandIndexThumb /> Scroll down! </span>
         </div>
       </div>
