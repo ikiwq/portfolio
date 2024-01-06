@@ -4,8 +4,8 @@ import Markdown from 'react-markdown';
 import { Typewriter } from 'react-simple-typewriter';
 import Logo from '../../assets/logo.jpg';
 
-import './Styles.scss';
 import aboutMe from '../../static/about/about.content';
+import './Styles.scss';
 
 const About = () => {
     const description = aboutMe.description;
@@ -45,7 +45,7 @@ const About = () => {
                     <img src={Logo} className='rounded-sm object-cover h-96 w-96 md:max-h-max md:h-full' style={{ maxHeight: '500px' }}></img>
                 </div>
                 <div className={`col-span-3 flex flex-col gap-3 px-5 md:px-0 items-center md:items-start`}>
-                    <h1 className='text-red-600 font-Bebas text-6xl lg:text-7xl mt-2 md:mt-0 duration-200'>
+                    <h1 className='text-red-600 font-Bebas text-5xl lg:text-7xl mt-2 md:mt-0 duration-200'>
                         ABOUT <Typewriter words={["ME", "WHAT I LIKE", "WHAT I DO"]} loop={true} cursor={true} cursorStyle="_" />
                     </h1>
                     <div className='paragraph-start-position transition-300' id='paragraph-div'>

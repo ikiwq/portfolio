@@ -45,7 +45,7 @@ const Work = () => {
     }, [experienceParagraphsRef])
 
     return (
-        <div name="experience" className={`w-full flex flex-col items-center justify-center pb-10 transition-all h-screen`}>
+        <div name="experience" className={`w-full flex flex-col items-center justify-center pb-10 transition-all min-h-screen`}>
             <div className='container mx-auto px-4 rounded-xl py-4 divRef mt-10 md:mt-0 flex flex-col items-center justify-center max-w-4xl'>
                 <div className='w-full flex items-start'>
                     <h1 className='font-Bebas w-full text-center text-red-600 text-6xl md:text-start lgpy-2.5 py-0' id="skill-text">MY EXPERIENCE<span className='font-Source'></span></h1>
@@ -67,9 +67,9 @@ const Work = () => {
                             <p className="text-2xl md:text-3xl font-semibold text-red-600 pt-1 md:pt-0 duration-200">{experienceData[experienceIndex]?.role}<span className="text-black dark:text-white duration-200"> <span className='text-3xl text-black dark:text-white duration-200'>@</span>{experienceData[experienceIndex]?.company}</span></p>
                             <div>
                                 <p className="text-lg md:py-1 text-black dark:text-white duration-200 pb-1 md:pb-2">{experienceData[experienceIndex]?.from} - {experienceData[experienceIndex]?.to.length > 0 ? experienceData[experienceIndex]?.to : 'Present'}</p>
-                                <div className='flex gap-1.5'>
+                                <div className='flex gap-1.5 overflow-x-scroll'>
                                     {experienceData[experienceIndex]?.technologies.map((technology, index) =>
-                                        <div key={'technologyExperience' + index} className="bg-neutral-200 dark:bg-neutral-900 px-2.5 py-0.5 rounded-xl duration-300"><p className='text-black dark:text-white duration-200'>{technology}</p></div>
+                                        <div key={'technologyExperience' + index} className="bg-neutral-200 dark:bg-neutral-900 px-2.5 py-0.5 rounded-xl duration-300 whitespace-nowrap"><p className='text-black dark:text-white duration-200'>{technology}</p></div>
                                     )}
                                 </div>
                                 <div>
