@@ -54,7 +54,7 @@ const MinorProject = ({ right, project }: { right: boolean, project: ProjectMode
           </div>
         </div>
         <footer className='pt-8 flex justify-between' style={{ letterSpacing: "0.02em" }}>
-          <div className='font-RobotoCondensed font-light flex gap-2.5'>
+          <div className='font-RobotoCondensed font-light flex gap-2.5 flex-wrap'>
             {project.technologies &&
               project.technologies.map((technology, index) => {
                 return (

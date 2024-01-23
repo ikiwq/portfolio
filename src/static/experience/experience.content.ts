@@ -6,14 +6,13 @@ const workExperiences : Array<Experience> = [
         company: "Blue Reply",
         from: "September 2023",
         to: "",
-        technologies: ["Java", "Spring Webflux", "Aws", "Salesforce Services", "MySQL"],
+        technologies: ["Java", "Spring Webflux", "Aws", "Salesforce Services", "MySQL", "MongoDB"],
         customer: "VF Corporation",
         experience:`- Worked with a team of 10+ individuals to define **requisites**, **architecture** and deliver **high quality** production **code**.
-- Integrated **MySQL** Databases and **AWS services** such as **S3**, **SQS** and **Serverless Computing**, with Spring. 
-- Used **Spring Weblux** to deliver asynchronous high performing code, capable of handling hundred of thousands of request per day with the maximum efficiency.
-- Consumed **Salesforce Marketing Cloud** APIs to facilitate communication between business and client.
-- Leveraged **Spring DataFlow** to design and deploy vast **data pipelines**, adequate to ingest and process **high volumes** of data.
+- Integrated **MySQL** and **MobgoDB** databases and various **AWS** products (**S3**, **SQS** and **Lambda Functions**) directly with **Spring**, **reducing** the overall project **complexity**. 
+- Leveraged **Spring DataFlow** to create **vast** and **efficient** data pipelines, handling over **one million lines** of data in **less than a minute** and exceeding the initial expectation of 10 minutes.
 - Written various **documentations**, both in english and italian, making the installation and use of the development environment **easier**.
+- **Designed** and **implemented** multiple **Spring backends** capable of processing **millions of daily requests**, seamlessly communicating with the frontend to deliver a **smooth** user **experience**.
 `,
     companyUrl: "",
     customerUrl: "",

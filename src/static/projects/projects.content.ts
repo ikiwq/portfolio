@@ -2,13 +2,13 @@ import { ProjectModel } from "../../models/project.model";
 
 export const projects : Array<ProjectModel> = [
     {
-        linkUrl : "",
+        linkUrl : "https://ikiwq-blog.vercel.app",
         githubUrl : "https://github.com/ikiwq/ikiwq-blog-v1",
         postImage : {
             name : "ikiwq-blog.png",
         },
-        projectDescription : `This is my blog, the Ikiwq-Blog! I actually tried GraphQL this time. I was very satisfied with the end result, a very minimalistic but working blog. The user can read articles and filter them by a category.`,
-        technologies : ["React", "Tailwind", "GraphQL"],
+        projectDescription : `This the second iteration of my blog, the Ikiwq-Blog! I actually tried NextJS 14 this time. I was very satisfied with the end result, a very minimalistic but working blog. The user can read articles and filter them by a category.`,
+        technologies : ["React", "NextJS", "Tailwind", "MongoDB"],
         title : "The ikiwq blog",
         featured: true
     },
@@ -32,7 +32,7 @@ export const projects : Array<ProjectModel> = [
         projectDescription : `Annex is a social network inspired by Facebook and Twitter. This project was meant to give users an open-source social network. The user can register, log in, modify their profile, publish new posts and also interact with them.`,
         technologies : ["Angular", "Spring", "Hibernate", "MySQL", "JWTs"],
         title : "Annex",
-        featured: true
+        featured: false
     },
     {
         linkUrl : "",
