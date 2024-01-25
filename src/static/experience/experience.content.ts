@@ -7,27 +7,24 @@ const workExperiences : Array<Experience> = [
         from: "September 2023",
         to: "",
         technologies: ["Java", "Spring Webflux", "Aws", "Salesforce Services", "MySQL", "MongoDB"],
-        customer: "VF Corporation",
-        experience:`- Worked with a team of 10+ individuals to define **requisites**, **architecture** and deliver **high quality** production **code**.
-- Integrated **MySQL** and **MobgoDB** databases and various **AWS** products (**S3**, **SQS** and **Lambda Functions**) directly with **Spring**, **reducing** the overall project **complexity**. 
-- Leveraged **Spring DataFlow** to create **vast** and **efficient** data pipelines, handling over **one million lines** of data in **less than a minute** and exceeding the initial expectation of 10 minutes.
-- Written various **documentations**, both in english and italian, making the installation and use of the development environment **easier**.
-- **Designed** and **implemented** multiple **Spring backends** capable of processing **millions of daily requests**, seamlessly communicating with the frontend to deliver a **smooth** user **experience**.
-`,
-    companyUrl: "",
-    customerUrl: "",
-    projectUrl: ""
-    },
-    {
-        role: "Backend Developer",
-        company: "Blue Reply",
-        from: "August 2023",
-        to: "September 2023",
-        technologies: ["Java", "Spring Webflux", "HCL", "Oracle"],
-        customer: "Luxottica",
-        experience:`- Worked with a team of 20+ people and actively contributed to the **maintenance** and bug fixing of existing applications.
-- Operated within a vast system built using **Oracle**, **HCL**, and **Spring Webflux**, deployed with **Docker**.
- - Interacted with the existing documentation, making several corrections to **improve** developers' understanding.
+        customer: "Blue Reply",
+        experience:`
+- Worked with multiple teams of 10+ individuals to define requirements,
+architecture and deliver high quality production code.
+- Implemented event-driven software solutions using Spring and Kafka to
+ensure asynchronous processing and improve request handling in critical
+sections.
+- Integrated MySQL and MongoDB databases and AWS products (S3, SQS
+and Lambda Functions) directly with Spring, reducing the overall project
+complexity.
+- Leveraged Spring DataFlow to create vast and efficient data pipelines,
+handling over one million lines of data in less than a minute and
+exceeding the initial expectation of 10 minutes.
+- Designed and implemented multiple Spring backends capable of
+processing millions of daily requests, seamlessly communicating with the
+frontend to deliver a smooth user experience.
+- Written various documentations, both in English and Italian, to facilitate
+the use and installation of the development environment.
 `,
     companyUrl: "",
     customerUrl: "",
