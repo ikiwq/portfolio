@@ -1,6 +1,8 @@
 # My Portfolio
 ### Overview
-This is my portfolio, built with Vite and React. The previous iteration was made also with Apollo Client on top of GraphQL, but I've decided to move all the data inside static files. I've made this decision since I didn't need to change my portfolio's content frequently and I didn't want to waste resources on a CMS.
+This is my portfolio, built with Vite and React. The previous iteration was made also with Apollo Client on top of GraphQL, but I've decided to move all the data inside static files. 
+
+I've made this decision since I didn't need to change my portfolio's content frequently and I didn't want to waste resources on a CMS.
 
 #### Built with
 [![My Skills](https://skillicons.dev/icons?i=react,vite&theme=light)](https://skillicons.dev)
