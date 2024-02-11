@@ -15,11 +15,11 @@ This is my portfolio, built with Vite and React. The previous iteration was made
 ### Installation
 Clone the repository in a directory:
 ```
-   git clone git@github.com:ikiwq/portfolio.git
+git clone git@github.com:ikiwq/portfolio.git
 ```
 Then, open a terminal inside the chosen directory and install all the dependencies with:
 ```
-   npm install
+npm install
 ```
 And finally, you should be ready to go.
 ## Modifying the content
