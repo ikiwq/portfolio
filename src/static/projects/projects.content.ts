@@ -7,8 +7,8 @@ export const projects : Array<ProjectModel> = [
         postImage : {
             name : "ikiwq-blog.png",
         },
-        projectDescription : `This the second iteration of my blog, the Ikiwq-Blog! I actually tried NextJS 14 this time. I was very satisfied with the end result, a very minimalistic but working blog. The user can read articles and filter them by a category.`,
-        technologies : ["React", "NextJS", "Tailwind", "MongoDB"],
+        projectDescription : `This the second iteration of my blog, the Ikiwq-Blog! I actually tried NextJS 14 this time. I was very satisfied with the end result, a very minimalistic but working blog. The user can read articles and filter them by a category. The API was written in Go from scratch with the standard HTTP library.`,
+        technologies : ["React", "NextJS", "Tailwind", "Go", "MySQL"],
         title : "The ikiwq blog",
         featured: true
     },
