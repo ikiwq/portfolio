@@ -2,8 +2,8 @@ import { ProjectModel } from "../../models/project.model";
 
 export const projects : Array<ProjectModel> = [
     {
-        linkUrl : "https://ikiwq-blog.vercel.app",
-        githubUrl : "https://github.com/ikiwq/ikiwq-blog-v1",
+        linkUrl : "https://blog.ikiwq.it",
+        githubUrl : "https://github.com/ikiwq/blog",
         postImage : {
             name : "ikiwq-blog.png",
         },
