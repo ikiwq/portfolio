@@ -27,8 +27,8 @@ And finally, you should be ready to go.
 ## Modifying the content
 All the static content is contained inside the src/static/ folder. The images are contained instead in the public/images/ folder.
 
-### License
+## License
 This project is licensed under the MIT license.
 
-### Credits
+## Credits
 A special thanks to [Adham Dannaway](https://www.adhamdannaway.com/) and [Britanny Chiang](https://brittanychiang.com/) that inspired me to design and create this portfolio.
