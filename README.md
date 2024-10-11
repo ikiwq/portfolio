@@ -14,7 +14,7 @@ I've made this decision since I didn't need to change my portfolio's content fre
    <img src="https://github.com/ikiwq/portfolio/assets/110495658/75296ed0-7c5f-464a-9bcd-9fcda3dc5370" height="300" width="400">
 </p>
 
-### Installation
+## Installation
 Clone the repository in a directory:
 ```
 git clone git@github.com:ikiwq/portfolio.git
