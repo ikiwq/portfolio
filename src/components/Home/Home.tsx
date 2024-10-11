@@ -18,7 +18,7 @@ const Home = () => {
     const delay = 1750;
 
     const timeoutId = setTimeout(() => {
-      let hiddenElements = document.querySelectorAll('.social-icon-hidden');
+      const hiddenElements = document.querySelectorAll('.social-icon-hidden');
       hiddenElements.forEach((element, index) => {
         setTimeout(() => {
           element.classList.remove('social-icon-hidden');

@@ -1,11 +1,7 @@
-import HomeContent from "../../models/home.models"
+import HomeContent from "../../models/home.models";
 
-let homeContent : HomeContent= {
-    selfDescriptions : [
-            "Web Developer",
-            "Backend Dev",
-            "Fullstack Dev"
-    ]
-}
+const homeContent: HomeContent = {
+  selfDescriptions: ["Web Developer", "Backend Dev", "Fullstack Dev"],
+};
 
-export default homeContent
+export default homeContent;
