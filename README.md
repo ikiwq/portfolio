@@ -4,7 +4,7 @@ This is my portfolio, built with Vite and React. The previous iteration was made
 
 I've made this decision since I didn't need to change my portfolio's content frequently and I didn't want to waste resources on a CMS.
 
-#### Built with
+### Built with
 [![My Skills](https://skillicons.dev/icons?i=react,vite&theme=light)](https://skillicons.dev)
 
 ### Screenshots
