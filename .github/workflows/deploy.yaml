@@ -24,7 +24,7 @@ jobs:
           docker stop portfolio-container || true
           docker rm portfolio-container || true
           docker run -d \
-          -e PUBLIC_API_URL=${{ env.PUBLIC_API_URL }} \
+          -e PUBLIC_API_URL=${{ secrets.PUBLIC_API_URL }} \
           --name portfolio-container \
           -p 3000:3000 \
           portfolio:latest
