@@ -9,8 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ikiwq portfolio",
-  description: "The ikiwq portfolio",
+  title: "Ikiwq Portfolio",
+  description: "My portfolio, where you can find anything you need to know about me.",
+  openGraph: {
+    title: "Ikiwq Portfolio",
+    description: "My portfolio, where you can find anything you need to know about me."
+  }
 };
 
 export default function RootLayout({
