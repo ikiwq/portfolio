@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.card {
+  position: relative;
+  transform-style: preserve-3d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.card:hover::before {
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer project-card {
+  .project-card:hover .project-link {
+    text-decoration: underline;
+  }
+
+  .project-card .project-icon {
+    margin-top: 1px;
+    transition-duration: 100ms;
+  }
+
+  .project-card:hover .project-icon {
+    transform: translate3d(3px, -3px, 0px);
+    color:  oklch(0.623 0.214 259.815);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer blog-card {
+  .blog-card:hover .blog-link {
+    text-decoration: underline;
+  }
+
+  .blog-card .blog-icon {
+    transition-duration: 100ms;
+  }
+
+  .blog-card:hover .blog-icon {
+    transform: translateX(5px);
+    color:  oklch(0.627 0.265 303.9);
+  }
+}
+
+@layer social-card {
+  .social-card:hover .social-link {
+    text-decoration: underline;
+  }
+
+  .social-card .social-icon {
+    transition-duration: 100ms;
+  }
+
+  .social-card:hover .social-icon {
+    transform: translate3d(3px, -3px, 0px);
+    color:  oklch(0.558 0.288 302.321)
+  }
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@theme {
+  --animate-gradient: bg-gradient 45s ease infinite;
 }

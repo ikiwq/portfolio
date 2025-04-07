@@ -1,0 +1,30 @@
+name: Deploy Portfolio on Docker
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    environment: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t portfolio:latest .
+
+      - name: Deploy Docker container
+        run: |
+          docker stop portfolio-container || true
+          docker rm portfolio-container || true
+          docker run -d \
+          -e PUBLIC_API_URL=${{ secrets.PUBLIC_API_URL }} \
+          --name portfolio-container \
+          -p 3000:3000 \
+          portfolio:latest
