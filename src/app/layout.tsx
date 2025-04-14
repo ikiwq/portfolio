@@ -9,17 +9,21 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const defaultTitle = "Ikiwq Portfolio";
+const defaultDescription = "My portfolio, where you can find anything you need to know about me.";
+
+
 export const metadata: Metadata = {
-  title: "Ikiwq Portfolio",
-  description: "My portfolio, where you can find anything you need to know about me.",
+  title: defaultTitle,
+  description: defaultDescription,
   metadataBase: new URL(BASE_URL || ""),
   twitter: {
-    title: "Ikiwq Portfolio",
-    description: "My portfolio, where you can find anything you need to know about me."
+    title: defaultTitle,
+    description: defaultDescription
   },
   openGraph: {
-    title: "Ikiwq Portfolio",
-    description: "My portfolio, where you can find anything you need to know about me."
+    title: defaultTitle,
+    description: defaultDescription
   }
 };
 
