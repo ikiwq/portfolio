@@ -10,6 +10,11 @@ COPY package*.json ./
 # Builder stage
 FROM base AS builder
 
+ARG PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$PUBLIC_API_URL
+ARG PUBLIC_BASE_URL
+ENV NEXT_PUBLIC_BASE_URL=$PUBLIC_BASE_URL
+
 COPY . .
 
 RUN npm install
@@ -25,15 +30,10 @@ ENV NODE_ENV=production
 COPY package*.json ./
 RUN npm ci --only=production
 
-RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
-
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/node_modules ./node_modules
 
-USER nextjs
-
 EXPOSE 3000
-
 CMD ["npm", "start"]
