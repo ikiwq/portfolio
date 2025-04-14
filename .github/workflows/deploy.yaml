@@ -18,9 +18,9 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t \
+          portfolio:latest . \
           --build-arg PUBLIC_API_URL=${{ env.PUBLIC_API_URL }} \
-          --build-arg PUBLIC_BASE_URL=${{ env.PUBLIC_BASE_URL }} \
-          portfolio:latest .
+          --build-arg PUBLIC_BASE_URL=${{ env.PUBLIC_BASE_URL }}
 
       - name: Deploy Docker container
         run: |
