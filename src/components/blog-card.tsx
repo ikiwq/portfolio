@@ -13,15 +13,18 @@ export default async function BlogCard(){
         <p className="font-semibold">Blog</p>
       </div>
       <div className="space-y-4">
-        {
+        { articles.length > 0 ? 
           articles.map((article) => (
             <BlogArticleCard
               key={`article-${article.id}`} 
               article={article}
             />
-          ))
+          )) : 
+          <div className="flex items-center justify-center h-32">
+            <p className="text-gray-300 text-sm">Hhm, there seems to be nothing here...</p>
+          </div>
         }
       </div>
     </Card>
-  )
+  );
 }

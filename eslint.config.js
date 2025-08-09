@@ -1,22 +1,35 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import pluginReact from "eslint-plugin-react";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  {files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]},
-  {languageOptions: { globals: globals.browser }},
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
   {
-    "rules": {
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
+    ignores: [
+      "**/node_modules/**",
+      ".next/**",
+      "out/**",
+      "dist/**",
+      "build/**",
+      ".vercel/**",
+      "coverage/**",
+    ],
+  },
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      indent: ["error", 2],
       "react/jsx-indent": ["error", 2],
-      "react/jsx-indent-props": ["error", 2]
-    }
-  }
+      "react/jsx-indent-props": ["error", 2],
+      semi: ["error", "always"],
+    },
+  },
 ];
+
+export default eslintConfig;

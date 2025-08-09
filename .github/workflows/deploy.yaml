@@ -18,17 +18,13 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t \
-          portfolio:latest . \
-          --build-arg PUBLIC_API_URL=${{ vars.PUBLIC_API_URL }} \
-          --build-arg PUBLIC_BASE_URL=${{ vars.PUBLIC_BASE_URL }}
+          portfolio:latest .
 
       - name: Deploy Docker container
         run: |
           docker stop portfolio-container || true
           docker rm portfolio-container || true
           docker run -d \
-          -e PUBLIC_API_URL=${{ vars.PUBLIC_API_URL }} \
-          -e PUBLIC_BASE_URL=${{ vars.PUBLIC_BASE_URL }} \
           -p 3000:3000 \
           --name portfolio-container \
           portfolio:latest

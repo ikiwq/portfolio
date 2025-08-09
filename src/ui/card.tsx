@@ -22,8 +22,8 @@ export default function Card({children, className}: CardProps){
   return (
     <div
       className={twMerge(defaultClassName, className)}
-     >
+    >
       {children}
     </div>
-  )
+  );
 }

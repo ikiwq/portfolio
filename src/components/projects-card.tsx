@@ -16,12 +16,12 @@ export default function ProjectsCard(){
             <Project
               key={`project-card-${i}`}
               {...project}
-          />
+            />
           ))
         }
       </div>
     </Card>
-  )
+  );
 }
 
 interface ProjectProps {
@@ -50,5 +50,5 @@ function Project({
         </div>
       </div>
     </a>
-  )
+  );
 }

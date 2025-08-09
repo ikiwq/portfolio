@@ -1,11 +1,11 @@
-import {API_URL, DEFAULT_TAKE} from "@/constants/api";
-import {BlogArticle} from "./types.api";
+import {CACHE_ONE_HOUR, DEFAULT_TAKE} from "@/constants/api";
+import {BlogArticle} from "./types";
 
 export async function getLatestArticles(): Promise<BlogArticle[]> {
   try{
-    const res = await fetch(`${API_URL}/api/v1/articles/?take=${DEFAULT_TAKE}&page=0`, {
+    const res = await fetch(`${process.env.PUBLIC_API_URL}/api/v1/articles?take=${DEFAULT_TAKE}&page=0`, {
       next: {
-        revalidate: 0 
+        revalidate: CACHE_ONE_HOUR,
       }
     });
 
@@ -14,8 +14,7 @@ export async function getLatestArticles(): Promise<BlogArticle[]> {
     }
 
     return res.json();
-  } catch(err) {
-    console.error(err);
+  } catch {
     return [];
   }
 }

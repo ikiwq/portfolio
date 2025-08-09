@@ -30,7 +30,7 @@ export function IntroductionCard(){
         </div>
       </div>
     </Card>
-  )
+  );
 }
 
 

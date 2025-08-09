@@ -20,5 +20,5 @@ export default function SkillsCard(){
         }
       </div>
     </Card>
-  )
+  );
 }

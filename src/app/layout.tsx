@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {LocaleContextProvider} from "@/context/locale";
-import {BASE_URL} from "@/constants/common";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -16,7 +15,7 @@ const defaultDescription = "My portfolio, where you can find anything you need t
 export const metadata: Metadata = {
   title: defaultTitle,
   description: defaultDescription,
-  metadataBase: new URL(BASE_URL || ""),
+  metadataBase: new URL(process.env.PUBLIC_BASE_URL ?? ""),
   twitter: {
     title: defaultTitle,
     description: defaultDescription

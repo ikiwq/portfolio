@@ -27,16 +27,16 @@ export default function SocialsCard() {
             href={social.href} 
             target="_blank" 
             rel="noopener noreferrer"
-        >
+          >
             <Card 
               className="flex items-center justify-center hover:text-purple-600"
-          >
+            >
               <social.icon
                 className="w-8 h-8"
-            />
+              />
             </Card>
           </a>
-      ))}
+        ))}
       </div>
     </div>
   );

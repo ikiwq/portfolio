@@ -6,17 +6,21 @@ interface SkillContent {
 
 const SKILL_CONTENT: SkillContent[] = [
   {
+    title: "Languages",
+    description: "Java, TypeScript, Python, SQL, Assembly (NASM)"
+  },
+  {
     title: "Backend",
-    description: "Spring & Spring Boot, MySQL, MongoDB, Kafka, Redis, REST APIs"
+    description: "Spring & Spring Boot, AdonisJS, AWS, MySQL, Kafka, Redis"
   },
   {
     title: "Frontend",
-    description: "React, React Native, Expo, TailwindCSS"
+    description: "React, NextJS, TailwindCSS"
   },
   {
     title: "Misc",
-    description: "OOP, Microservices, Docker, Postman"
+    description: "Node.js, OOP, Microservices, Docker, Postman, Git, Linux"
   },
 ];
 
-export {SKILL_CONTENT}
+export {SKILL_CONTENT};

@@ -23,7 +23,7 @@ export default function WorkCard(){
         }
       </div>
     </Card>
-  )
+  );
 }
 
 function CompanyCard({
@@ -60,5 +60,5 @@ function CompanyCard({
         </p>
       </div>
     </div>
-  )
+  );
 }

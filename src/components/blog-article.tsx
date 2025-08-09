@@ -1,5 +1,5 @@
 "use client";
-import {type BlogArticle} from "@/api/types.api";
+import {type BlogArticle} from "@/api/types";
 import {useLocaleContext} from "@/context/locale";
 // import {IconArrowRight} from "@tabler/icons-react";
 
@@ -29,5 +29,5 @@ export default function BlogArticleCard({article}: {article: BlogArticle}) {
         </p>
       </div>
     </div>
-  )
+  );
 }

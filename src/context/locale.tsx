@@ -8,7 +8,7 @@ interface LocaleContextProps {
 
 const defaultIntlOptions: Intl.DateTimeFormatOptions = {
   dateStyle: "long"
-}
+};
 
 const LocaleContext = React.createContext<LocaleContextProps | undefined>(undefined);
 
@@ -31,7 +31,7 @@ function LocaleContextProvider({children}: {children: ReactNode | ReactNode[]}) 
     >
       {children}
     </LocaleContext.Provider>
-  )
+  );
 }
 
 export {useLocaleContext, LocaleContextProvider};
