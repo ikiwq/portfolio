@@ -8,6 +8,6 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./portfolio:/app
+      - ./:/app
     working_dir: /app
     command: npm start
