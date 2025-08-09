@@ -12,4 +12,4 @@ services:
 
 networks:
   main-network:
-    driver: bridge
+    external: true
