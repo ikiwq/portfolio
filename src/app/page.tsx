@@ -1,10 +1,10 @@
-import BlogCard from "@/components/blog-card";
-import {IntroductionCard} from "@/components/introduction-card";
-import ProjectsCard from "@/components/projects-card";
-import SkillsCard from "@/components/skills-card";
-import SocialsCard from "@/components/socials-card";
-import SpotifyCard from "@/components/spotify-card";
-import WorkCard from "@/components/work-card";
+import BlogCard from "@/ui/components/blog-card";
+import {IntroductionCard} from "@/ui/components/introduction-card";
+import ProjectsCard from "@/ui/components/projects-card";
+import SkillsCard from "@/ui/components/skills-card";
+import SocialsCard from "@/ui/components/socials-card";
+import SpotifyCard from "@/ui/components/spotify-card";
+import WorkCard from "@/ui/components/work-card";
 
 export default function Home() {
   return (

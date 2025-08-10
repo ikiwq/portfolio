@@ -31,10 +31,11 @@ export default function SocialsCard() {
             aria-label={`Open my ${social.title} in a new tab`}
           >
             <Card 
-              className="flex items-center justify-center hover:text-purple-600"
+              className="flex items-center justify-center hover:text-purple-600 p-3"
             >
               <social.icon
                 className="w-8 h-8"
+                stroke={1.5}
               />
             </Card>
           </a>

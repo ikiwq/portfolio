@@ -1,4 +1,4 @@
-import {Icon, IconBrandGithub, IconBrandLinkedin} from "@tabler/icons-react";
+import {Icon, IconBrandGithub, IconBrandLinkedin, IconMail} from "@tabler/icons-react";
 
 interface SocialsContent {
   title: string;
@@ -7,6 +7,11 @@ interface SocialsContent {
 }
 
 const SOCIALS_CONTENT: SocialsContent[] = [
+  {
+    title: "Mail",
+    icon: IconMail,
+    href: "mailto:domenicano.chris@gmail.com"
+  },
   {
     title: "Linkedin",
     icon: IconBrandLinkedin,
