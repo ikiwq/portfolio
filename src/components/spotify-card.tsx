@@ -22,6 +22,7 @@ export default function SpotifyCard(){
           href={SPOTIFY_CONTENT.href}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Open Ride the Lightning in a new spotifytab`}
         >
           <div className={`w-10 h-10 
           rounded-full 

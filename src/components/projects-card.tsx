@@ -38,7 +38,7 @@ function Project({
   url
 }: ProjectProps){
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`Discover more about ${title}`}>
       <div className="w-full flex items-start space-x-2 cursor-pointer project-card">
         <Image width={40} height={40} className="rounded-xl mt-1" src={imageSrc} alt="Project image"/>
         <div className="w-full">

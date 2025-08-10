@@ -11,6 +11,7 @@ export default function SocialsCard() {
         href={CURRICULUM_CONTENT.href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`Open my curriculum in a new tab`}
       >
         <Card className="social-card">
           <div className="flex items-center">
@@ -27,6 +28,7 @@ export default function SocialsCard() {
             href={social.href} 
             target="_blank" 
             rel="noopener noreferrer"
+            aria-label={`Open my ${social.title} in a new tab`}
           >
             <Card 
               className="flex items-center justify-center hover:text-purple-600"
