@@ -1,9 +1,12 @@
-import {WORK_CONTENT, WorkInformation} from "@/static/work/work.content";
+
+import { getWorkContent } from "@/api/content";
+import { WorkContent } from "@/api/types";
 import Card from "@/ui/card";
 import {IconBriefcase} from "@tabler/icons-react";
 import Image from "next/image";
+export default async function WorkCard(){
+  const workContent = await getWorkContent();
 
-export default function WorkCard(){
   return (
     <Card className="h-full space-y-3">
       <div className="flex items-center gap-2">
@@ -14,7 +17,7 @@ export default function WorkCard(){
       </div>
       <div className="flex flex-col gap-2">
         {
-          WORK_CONTENT.map((work, i) => (
+          workContent.map((work: WorkContent, i: number) => (
             <CompanyCard
               key={`work-card-${i}`}
               {...work}
@@ -27,13 +30,13 @@ export default function WorkCard(){
 }
 
 function CompanyCard({
-  imageSrc,
+  image,
   title,
   role,
   description,
   from,
   to
-}: WorkInformation){
+}: WorkContent){
   return (
     <div className="flex gap-2">
       <div className="w-10 h-10">
@@ -41,7 +44,7 @@ function CompanyCard({
           width={40}
           height={40}
           className="rounded-xl mt-1" 
-          src={imageSrc} 
+          src={image} 
           alt="Work experience"
         />
       </div>

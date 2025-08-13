@@ -1,8 +1,10 @@
-import {SKILL_CONTENT} from "@/static/skills/skills.content";
+import { getSkillsContent } from "@/api/content";
+import { SkillContent } from "@/api/types";
 import Card from "@/ui/card";
 import {IconDeviceDesktop} from "@tabler/icons-react";
+export default async function SkillsCard(){
+  const skillsContent = await getSkillsContent();
 
-export default function SkillsCard(){
   return (
     <Card className="h-full space-y-3">
       <div className="flex items-center gap-2">
@@ -11,7 +13,7 @@ export default function SkillsCard(){
       </div>
       <div className="space-y-2">
         {
-          SKILL_CONTENT.map((skill, i) => (
+          skillsContent.map((skill: SkillContent, i: number) => (
             <div key={`skill-card-${i}`}>
               <p className="text-neutral-400 text-xs">{skill.title}</p>
               <p className="text-sm">{skill.description}</p>

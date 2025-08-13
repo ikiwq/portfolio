@@ -1,9 +1,12 @@
-import {PROJECT_CONTENT} from "@/static/projects/projects.content";
+
+import { getProjectsContent } from "@/api/content";
+import { ProjectContent } from "@/api/types";
 import Card from "@/ui/card";
 import {IconArrowUpRight, IconCode} from "@tabler/icons-react";
 import Image from "next/image";
+export default async function ProjectsCard(){
+  const projectsContent = await getProjectsContent();
 
-export default function ProjectsCard(){
   return (
     <Card className="flex flex-col space-y-3">
       <div className="flex items-center gap-2">
@@ -12,7 +15,7 @@ export default function ProjectsCard(){
       </div>
       <div className="h-full flex flex-col gap-2 justify-between">
         {
-          PROJECT_CONTENT.map((project, i) => (
+          projectsContent.map((project: ProjectContent, i: number) => (
             <Project
               key={`project-card-${i}`}
               {...project}
@@ -24,23 +27,16 @@ export default function ProjectsCard(){
   );
 }
 
-interface ProjectProps {
-  imageSrc: string;
-  title: string;
-  description: string;
-  url: string;
-}
-
 function Project({
-  imageSrc, 
+  image, 
   title,
   description,
   url
-}: ProjectProps){
+}: ProjectContent){
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`Discover more about ${title}`}>
       <div className="w-full flex items-start space-x-2 cursor-pointer project-card">
-        <Image width={40} height={40} className="rounded-xl mt-1" src={imageSrc} alt="Project image"/>
+        <Image width={40} height={40} className="rounded-xl mt-1" src={image} alt="Project image"/>
         <div className="w-full">
           <div className="flex items-center">
             <p className="project-link">{title}</p>

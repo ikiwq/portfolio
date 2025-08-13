@@ -1,5 +1,5 @@
 import BlogCard from "@/ui/components/blog-card";
-import {IntroductionCard} from "@/ui/components/introduction-card";
+import IntroductionCard from "@/ui/components/introduction-card";
 import ProjectsCard from "@/ui/components/projects-card";
 import SkillsCard from "@/ui/components/skills-card";
 import SocialsCard from "@/ui/components/socials-card";
