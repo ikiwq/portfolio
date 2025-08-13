@@ -48,11 +48,11 @@ function CompanyCard({
       <div className="w-full h-full">
         <div className="flex justify-between items-center">
           <p>{title}</p>
-          <p className="text-xs text-neutral-600 dark:text-neutral-400">
+          <p className="text-xs text-neutral-400">
             {from} - {to ?? "Present"}
           </p>
         </div>
-        <p className="text-xs text-neutral-600 dark:text-neutral-400">
+        <p className="text-xs text-neutral-400">
           {role}
         </p>
         <p className="text-sm text-neutral-200">

@@ -12,7 +12,6 @@ export default function Home() {
       className={`
         bg-gradient-to-br from-indigo-600 from-0% via-black to-purple-600 to-100%
         w-screen h-screen flex items-center justify-center 
-        text-black dark:text-white 
         bg-[length:400%_400%] animate-gradient
         overflow-y-scroll px-3 pt-3
       `}
